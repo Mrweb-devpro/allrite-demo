@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root {
+  --main: #b08400;
+  --light-main: #eed58b;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #6b6b6b;
+  min-height: 100svh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #f7f7f7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdfdfd;
+  border: 1.2px solid var(--light-main);
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+}
+header img {
+  width: 12rem;
+  height: auto;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+header nav ul li a:link,
+header nav ul li a:visited {
+  color: #888;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+header nav ul li a:hover,
+header nav ul li a:active {
+  color: #444;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+main section form {
+  display: flex;
+  flex-direction: column;
+  border: 1.2px solid var(--light-main);
+  gap: 2.5rem;
+  background-color: #fdfdfd;
+  border-radius: 2rem;
+  padding: 4rem 5rem;
+}
+main section form h2 {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+main section form span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main section form span label {
+  font-size: 1.4rem;
+}
+main section form span input {
+  padding: 0.8rem 1rem;
+  border: 0.4px solid #bbb;
+  border-radius: 0.5rem;
+  width: 30rem;
+  height: 3.267rem;
+}
+main section form span input[type="checkbox"] {
+  width: initial;
+}
+main section form button {
+  background-color: var(--main);
+  align-self: center;
+  color: #eee;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+main section form button:hover {
+  cursor: pointer;
+}
+h1 {
+  font-size: 2.1rem;
+}
+h2 {
+  color: #b08400;
+  font-size: 1.9rem;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <script defer src="/js/signup.js"></script>
+    <title>Sign up</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.svg" alt="" />
+
+      <h1>Sign Up Page</h1>
+
+      <nav>
+        <ul>
+          <li><a href="/login">Login</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form>
+          <span>
+            <label for="username">Userame</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              id="username"
+            />
+          </span>
+          <span>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="email" id="email" />
+          </span>
+          <span>
+            <label for="password">Password</label>
+            <input
+              type="text"
+              name="password"
+              placeholder="password"
+              id="password"
+            />
+          </span>
+
+          <span>
+            <label for="terms">T&C's</label>
+            <span>
+              <input type="checkbox" name="terms-conditions" id="terms" />
+              I AGREE TO ALL THE TERMS AND CONDITIONS
+            </span>
+          </span>
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

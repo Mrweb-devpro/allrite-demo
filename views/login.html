@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ALL-RITE/LOGIN</title>
+    <script defer type="module" src="/js/login.js"></script>
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.svg" alt="" />
+
+      <h1>Login Page</h1>
+      <nav>
+        <ul>
+          <li><a href="/signup">Sign Up</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form>
+          <span>
+            <label for="email">EMAIL</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="@gmail.com"
+              required
+            />
+          </span>
+          <span>
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              placeholder="XXXXXXXXXXXXXXXXXXX"
+            />
+          </span>
+          <i id="form-error"></i>
+          <button type="submit">Login</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

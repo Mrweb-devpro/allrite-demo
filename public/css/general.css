@@ -1,0 +1,128 @@
+@import "./animations.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root {
+  --main: #b08400;
+  --light-main: #eed58b;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #6b6b6b;
+  min-height: 100svh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #f7f7f7;
+}
+button:hover {
+  cursor: pointer;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #fdfdfd;
+  border: 1.2px solid var(--light-main);
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+}
+
+header img {
+  width: 12rem;
+  height: auto;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+header nav ul li a:link.admin {
+  font-size: 1.5rem;
+  color: #666;
+}
+header nav ul li a:link,
+header nav ul li a:visited {
+  color: #888;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+header nav ul li a:hover,
+header nav ul li a:active {
+  color: #444;
+}
+
+i#form-error {
+  color: red;
+  font-size: 1.2rem;
+  align-self: center;
+  letter-spacing: 2px;
+}
+div.toast {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-120%);
+  min-height: 7rem;
+  min-width: 43%;
+  max-width: 70%;
+  padding: 2rem 3rem;
+  font-size: 1.4rem;
+  background-color: var(--light-main);
+  border-radius: 1.2rem;
+  box-shadow: 0 0 30px 5px #00000020, 0 0 0px 0.3px var(--main);
+  transition: all;
+  color: #444;
+  font-size: 1.6rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+div.toast.toastAnimate {
+  /* animation: toastAnimation 0.2s linear forwards; */
+  transform: translateX(-50%) translateY(8rem);
+}
+div.toast h4 {
+  font-size: 1.8rem;
+  color: #555;
+}
+
+div.toast p {
+  max-width: 100%;
+  line-break: anywhere;
+  line-height: 1.5;
+  height: fit-content;
+}
+div.toast button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.8rem;
+  border: none;
+  background: transparent;
+  color: #444;
+  filter: grayscale(90%);
+}
+
+div#success-toast {
+  color: green;
+}
+div#error-toast {
+  color: red;
+}
