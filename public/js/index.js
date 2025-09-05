@@ -1,4 +1,15 @@
 let currentUser;
+
+async function logout(e) {
+  e.preventDefault();
+  try {
+    const res = await fetch("http://localhost:8080/api/auth/logout", {}).then();
+    if (!res.ok) return console.log(res.error);
+    location.replace("./login");
+  } catch (error) {
+    console.log(error.message);
+  }
+}
 async function getData() {
   try {
     const tokenRes = await fetch("http://localhost:8080/api/auth/refresh");
@@ -137,6 +148,8 @@ addEventListener("load", async () => {
   console.log(currentUser);
   await getData();
 });
+document.querySelector("#logout-link").addEventListener("click", logout);
+
 document.querySelector("#searchReset").addEventListener("click", () => {
   if (location.search) location.replace("./");
 });

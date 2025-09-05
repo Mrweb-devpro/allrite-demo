@@ -45,6 +45,7 @@ module.exports.login = async function (req, res) {
 
 //-- LOGOUT
 module.exports.logout = (req, res) => {
+  console.log("clicking");
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(204); //successful no
 
